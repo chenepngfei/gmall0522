@@ -1,6 +1,6 @@
 package com.afei.gmall.user.module.sys.service.impl;
 
-import com.afei.common.utils.PageUtils;
+import com.afei.gmall.user.common.utils.PageUtils;
 import com.afei.gmall.user.common.utils.Query;
 import com.afei.gmall.user.module.sys.dao.UserDao;
 import com.afei.gmall.user.module.sys.entity.User;
@@ -9,7 +9,6 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.apache.commons.lang3.StringUtils;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Map;
