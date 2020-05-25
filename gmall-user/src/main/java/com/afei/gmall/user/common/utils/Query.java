@@ -1,6 +1,6 @@
 package com.afei.gmall.user.common.utils;
 
-import com.afei.common.xss.SQLFilter;
+import com.afei.gmall.user.common.xss.SQLFilter;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.core.metadata.OrderItem;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;

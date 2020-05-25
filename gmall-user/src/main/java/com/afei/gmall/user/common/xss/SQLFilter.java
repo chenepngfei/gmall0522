@@ -1,9 +1,9 @@
 package com.afei.gmall.user.common.xss;
 
 
+import com.afei.gmall.user.common.exception.RRException;
 import org.apache.commons.lang3.StringUtils;
 
-import com.afei.common.exception.RRException;
 
 /**
  * SQL过滤
