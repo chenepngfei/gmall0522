@@ -2,8 +2,8 @@ package com.afei.gmall.user.modules.sys.controller;
 
 import java.util.Arrays;
 import java.util.Map;
-import com.afei.gmall.user.common.utils.PageUtils;
-import com.afei.gmall.user.common.utils.Result;
+import com.afei.gmall.common.utils.PageUtils;
+import com.afei.gmall.common.utils.Result;
 import com.afei.gmall.user.modules.sys.entity.UmsRoleEntity;
 import com.afei.gmall.user.modules.sys.service.UmsRoleService;
 import org.springframework.beans.factory.annotation.Autowired;

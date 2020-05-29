@@ -1,7 +1,7 @@
 package com.afei.gmall.user.modules.sys.service.impl;
 
-import com.afei.gmall.user.common.utils.PageUtils;
-import com.afei.gmall.user.common.utils.Query;
+import com.afei.gmall.common.utils.PageUtils;
+import com.afei.gmall.common.utils.Query;
 import com.afei.gmall.user.modules.sys.dao.UmsMemberDao;
 import com.afei.gmall.user.modules.sys.entity.UmsMemberEntity;
 import com.afei.gmall.user.modules.sys.service.UmsMemberService;
@@ -13,6 +13,7 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 
 
 @Service("umsMemberService")
+//@org.apache.dubbo.config.annotation.Service
 public class UmsMemberServiceImpl extends ServiceImpl<UmsMemberDao, UmsMemberEntity> implements UmsMemberService {
 
     @Override

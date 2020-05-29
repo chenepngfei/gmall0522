@@ -1,9 +1,7 @@
 package com.afei.gmall.user.modules.sys.service;
-
-import com.afei.gmall.user.common.utils.PageUtils;
+import com.afei.gmall.common.utils.PageUtils;
 import com.afei.gmall.user.modules.sys.entity.UmsAdminEntity;
 import com.baomidou.mybatisplus.extension.service.IService;
-
 import java.util.Map;
 
 /**

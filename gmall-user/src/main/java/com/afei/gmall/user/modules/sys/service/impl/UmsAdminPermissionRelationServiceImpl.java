@@ -1,7 +1,7 @@
 package com.afei.gmall.user.modules.sys.service.impl;
 
-import com.afei.gmall.user.common.utils.PageUtils;
-import com.afei.gmall.user.common.utils.Query;
+import com.afei.gmall.common.utils.PageUtils;
+import com.afei.gmall.common.utils.Query;
 import com.afei.gmall.user.modules.sys.dao.UmsAdminPermissionRelationDao;
 import com.afei.gmall.user.modules.sys.entity.UmsAdminPermissionRelationEntity;
 import com.afei.gmall.user.modules.sys.service.UmsAdminPermissionRelationService;
@@ -12,6 +12,7 @@ import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 
 @Service("umsAdminPermissionRelationService")
+//@org.apache.dubbo.config.annotation.Service(version = "${dubbo.version}")
 public class UmsAdminPermissionRelationServiceImpl extends ServiceImpl<UmsAdminPermissionRelationDao, UmsAdminPermissionRelationEntity> implements UmsAdminPermissionRelationService {
 
     @Override

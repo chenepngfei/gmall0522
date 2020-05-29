@@ -4,7 +4,7 @@
 <mapper namespace="com.afei.gmall.user.modules.sys.dao.UmsAdminLoginLogDao">
 
 	<!-- 可根据自己的需求，是否要使用 -->
-    <resultMap type="com.afei.gmalluser..modules.sys.entity.UmsAdminLoginLogEntity" id="umsAdminLoginLogMap">
+    <resultMap type="com.afei.gmall.user.modules.sys.entity.UmsAdminLoginLogEntity" id="umsAdminLoginLogMap">
         <result property="id" column="id"/>
         <result property="adminId" column="admin_id"/>
         <result property="createTime" column="create_time"/>

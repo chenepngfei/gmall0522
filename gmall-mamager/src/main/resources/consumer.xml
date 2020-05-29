@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://code.alibabatech.com/schema/dubbo
+       http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+    <!-- 消费方应用名，用于计算依赖关系，不是匹配条件，不要与提供方一样 -->
+    <dubbo:application name="mamager-consumer"/>
+
+    <!-- 使用multicast广播注册中心暴露服务地址 -->
+    <dubbo:registry protocol="zookeeper" address="192.168.70.123:2181" timeout="60000"/>
+
+    <!-- 用dubbo协议在20880端口暴露服务 -->
+    <!--    <dubbo:protocol name="dubbo" port="20087"/>-->
+
+    <dubbo:reference interface="com.afei.gmall.user.modules.sys.service.UmsMemberLoginLogService"
+                     version="1.0" check="false" id="umsMemberLoginLogService" />
+
+    <!--    &lt;!&ndash; 声明需要暴露的服务接口 &ndash;&gt;-->
+    <!--    <dubbo:service interface="com.afei.gmall.user.modules.sys.service.UmsMemberLoginLogService" ref="adminLoginManager" timeout="10000" retries="0" delay="-1"/>-->
+    <!--    &lt;!&ndash; 和本地bean一样实现服务 &ndash;&gt;-->
+    <!--    <bean id="adminLoginManager" class="com.afei.gmall.user.modules.sys.service.impl.UmsMemberLoginLogServiceImpl"/>-->
+
+
+</beans>
+        <!--<?xml version="1.0" encoding="UTF-8"?>-->
+        <!--<beans xmlns="http://www.springframework.org/schema/beans"-->
+        <!--       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"-->
+        <!--       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"-->
+        <!--       xsi:schemaLocation="http://www.springframework.org/schema/beans-->
+        <!--    http://www.springframework.org/schema/beans/spring-beans.xsd-->
+        <!--    http://code.alibabatech.com/schema/dubbo-->
+        <!--    http://code.alibabatech.com/schema/dubbo/dubbo.xsd">-->
+        <!--    &lt;!&ndash; 提供方应用信息，用于计算依赖关系 &ndash;&gt;-->
+        <!--    <dubbo:application name="demo-provider" />-->
+
+        <!--    &lt;!&ndash; 使用zookeeper注册中心暴露服务地址 &ndash;&gt;-->
+        <!--    <dubbo:registry protocol="zookeeper" address="192.168.70.123:2181" timeout="60000"/>-->
+
+        <!--    &lt;!&ndash; 用dubbo协议在20880端口暴露服务 &ndash;&gt;-->
+        <!--    <dubbo:protocol name="dubbo" port="20880" />-->
+
+
+        <!--    &lt;!&ndash; 暴露dubbo服务的方式一&ndash;&gt;-->
+        <!--    &lt;!&ndash; 使用注解方式暴露接口，会自动扫描package下所有包中dubbo相关的注解，这样就不用在xml中再针对每个服务接口配置dubbo:service interface&ndash;&gt;-->
+        <!--&lt;!&ndash;    <dubbo:annotation package="com.afei.gmall.user.modules.sys.service"/>&ndash;&gt;-->
+
+        <!--    <dubbo:service interface="com.afei.gmall.user.modules.sys.service.UmsMemberLoginLogService"-->
+        <!--                   version="1.0" ref="umsMemberLoginLogServiceImpl" timeout="5000" />-->
+
+        <!--    &lt;!&ndash; 暴露dubbo服务的方式二 &ndash;&gt;-->
+        <!--    &lt;!&ndash; 使用xml配置方式申明暴露一个接口服务，在程序启动的时候会自动注册到zookeeper。-->
+        <!--         等同于在类上打@service注解，打了注解就必须要用annotation指定启动扫描路径，使用这种方式，就不需要指定annotation了&ndash;&gt;-->
+
+
+        <!--</beans>-->

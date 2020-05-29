@@ -1,7 +1,7 @@
 package com.afei.gmall.user.modules.sys.service.impl;
 
-import com.afei.gmall.user.common.utils.PageUtils;
-import com.afei.gmall.user.common.utils.Query;
+import com.afei.gmall.common.utils.PageUtils;
+import com.afei.gmall.common.utils.Query;
 import com.afei.gmall.user.modules.sys.dao.UmsMemberMemberTagRelationDao;
 import com.afei.gmall.user.modules.sys.entity.UmsMemberMemberTagRelationEntity;
 import com.afei.gmall.user.modules.sys.service.UmsMemberMemberTagRelationService;
@@ -12,6 +12,7 @@ import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 
 @Service("umsMemberMemberTagRelationService")
+//@org.apache.dubbo.config.annotation.Service
 public class UmsMemberMemberTagRelationServiceImpl extends ServiceImpl<UmsMemberMemberTagRelationDao, UmsMemberMemberTagRelationEntity> implements UmsMemberMemberTagRelationService {
 
     @Override

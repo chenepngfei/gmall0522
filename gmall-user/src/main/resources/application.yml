@@ -34,14 +34,25 @@ spring:
   freemarker:
     suffix: .html
     request-context-attribute: request
-
+#dubbo:
+#  application:
+#    name: sea-provider-log  #服务名称
+#  registry:
+#    protocol: zookeeper
+#    address: 192.168.70.123:2181 #zookeeper注册中心地址
+#  protocol:
+#    name: dubbo  #dubbo通讯协议名称
+#    port: 20887
+#  version: 1.0.0
+#  scan:
+#    base-packages: com.afei.gmall.user #dubbo的服务扫描路径
 
 
 #mybatis
 mybatis-plus:
-  mapper-locations: classpath*:/com/afei/gmall/user/module/**/dao/*.xml
+  mapper-locations:  classpath*:/com/afei/gmall/user/modules/sys/mapper/*.xml
   #实体扫描，多个package用逗号或者分号分隔
-  typeAliasesPackage: com.afei.gmall.user.module.*.entity
+  typeAliasesPackage: com.afei.gmall.user.module.sys.entity
   global-config:
     #数据库相关配置
     db-config:

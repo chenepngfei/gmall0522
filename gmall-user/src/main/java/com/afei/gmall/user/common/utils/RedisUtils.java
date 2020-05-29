@@ -1,22 +1,11 @@
-/**
- * Copyright (c) 2016-2019 人人开源 All rights reserved.
- *
- * https://www.renren.io
- *
- * 版权所有，侵权必究！
- */
-
 package com.afei.gmall.user.common.utils;
-
-import java.util.concurrent.TimeUnit;
-
-import javax.annotation.Resource;
-
+import com.alibaba.fastjson.JSON;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.*;
 import org.springframework.stereotype.Component;
 
-import com.alibaba.fastjson.JSON;
+import javax.annotation.Resource;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Redis工具类

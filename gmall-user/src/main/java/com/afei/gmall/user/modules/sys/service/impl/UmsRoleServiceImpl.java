@@ -1,7 +1,7 @@
 package com.afei.gmall.user.modules.sys.service.impl;
 
-import com.afei.gmall.user.common.utils.PageUtils;
-import com.afei.gmall.user.common.utils.Query;
+import com.afei.gmall.common.utils.PageUtils;
+import com.afei.gmall.common.utils.Query;
 import com.afei.gmall.user.modules.sys.dao.UmsRoleDao;
 import com.afei.gmall.user.modules.sys.entity.UmsRoleEntity;
 import com.afei.gmall.user.modules.sys.service.UmsRoleService;
@@ -13,6 +13,7 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 
 
 @Service("umsRoleService")
+//@org.apache.dubbo.config.annotation.Service
 public class UmsRoleServiceImpl extends ServiceImpl<UmsRoleDao, UmsRoleEntity> implements UmsRoleService {
 
     @Override
