@@ -30,7 +30,7 @@
         <joda.time.version>2.9.9</joda.time.version>
         <commons.io.version>2.5</commons.io.version>
         <httpclient.version>4.5.5</httpclient.version>
-        <jsoup.version>1.11.2</jsoup.version>
+        <jsoup.version>1.15.3</jsoup.version>
         <dubbo-starter.version>1.0.10</dubbo-starter.version>
         <dubbo.version>2.6.0</dubbo.version>
         <zkclient.version>0.10</zkclient.version>
